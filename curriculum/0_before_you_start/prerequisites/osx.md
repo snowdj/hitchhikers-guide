@@ -36,7 +36,7 @@ If you don't know how to do that, run this:
 echo 'export PATH=/usr/local/bin:/usr/local/sbin:$PATH' >> ~/.profile
 ```
 
-If still not working. [Ask for help](https://github.com/dssg/hitchhikers-guide/blob/master/prerequisites/README.md#asking-for-help).
+If still not working. [Ask for help](https://github.com/dssg/hitchhikers-guide/blob/master/curriculum/0_before_you_start/prerequisites/README.md#asking-for-help).
 
 
 
@@ -68,7 +68,7 @@ For managing your python environments and packages, we recommend to use `conda`,
 
 Anaconda includes Python, `conda` (a package and environment manager) and a bunch of [Python packages](https://docs.continuum.io/anaconda/pkg-docs). After installing Anaconda you'll have everything to get started, but it requires ~3GB of disk space.
 
-*   [Installation guide](https://www.continuum.io/downloads#_macosx) (Use Anaconda with Python 2.7)
+*   [Installation guide](https://www.continuum.io/downloads#_macosx) (Use Anaconda with Python 3.6)
 *   [Documentation](http://conda.pydata.org/docs/)
 
 
@@ -85,7 +85,7 @@ Note for advanced users: You can install anaconda using `brew`. Run `brew cask i
 
 Miniconda is a light-weight version of Anaconda, it only includes Python and  `conda`, you can later install only the Python packages that you'll need.
 
-*   [Installation guide](http://conda.pydata.org/docs/install/quick.html#os-x-miniconda-install) (Use Miniconda with Python 2.7)
+*   [Installation guide](http://conda.pydata.org/docs/install/quick.html#os-x-miniconda-install) (Use Miniconda with Python 3.6)
 *   [Documentation](http://conda.pydata.org/docs/)
 
 Once Miniconda is installed, run the following to install DSSG required Python packages:
@@ -102,8 +102,8 @@ Note for advanced users: You can install miniconda using `brew`. Run `brew cask 
 If you don't want to install Anaconda/Miniconda, you can install Python directly from homebrew and manage your packages with `pip` and virtual environments with `virtualenv`.
 
 ```bash
-#To install Python 2 and pip
-brew install python
+#To install Python 3 and pip
+brew install python3
 #To install virtual env
 pip install virtualenv
 #To install dssg required python packages
@@ -111,6 +111,6 @@ curl https://raw.githubusercontent.com/dssg/hitchhikers-guide/master/curriculum/
 pip install -r dssg-requirements.txt
 ```
 
-Nice guide to use [virtualenv](http://docs.python-guide.org/en/latest/starting/install/osx/).
+Nice guide to use [virtualenv](http://docs.python-guide.org/en/latest/starting/install3/osx/#install3-osx).
 
 *Note: The caveat of using `pip` directly instead of `conda`, is that `conda` will take care of external dependencies for you (some Python packages depend on non-Python packages to work). But you can install those with `brew`.*
